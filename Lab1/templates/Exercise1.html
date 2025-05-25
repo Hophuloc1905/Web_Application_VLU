@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linear Equation</title> 
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Linear Equation</h1>
+    <p>Equation: y = 5x + 7</p>
+    <p>Given x = -2</p>
+    <p>Calculated y = <strong id="result"></strong></p>
+  </div>
+  <script>
+    const x = -2;
+    const y = 5 * x + 7;
+    document.getElementById('result').textContent = y;
+  </script>
+</body>
+</html>
